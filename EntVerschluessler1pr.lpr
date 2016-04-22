@@ -1,10 +1,12 @@
 program EntVerschluessler1pr;
 
+{$MODE Delphi}
+
 uses
-  Forms,
+  Forms, Interfaces,
   EntVerschluessler1 in 'EntVerschluessler1.pas' {Form1};
 
-{$R *.RES}
+{$R *.res}
 
 begin
   Application.Initialize;

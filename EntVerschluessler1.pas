@@ -1,10 +1,12 @@
 unit EntVerschluessler1;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  StdCtrls, ExtCtrls, ComCtrls;
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, ExtCtrls, ComCtrls, FileUtil;
 
 type
   TForm1 = class(TForm)
@@ -45,7 +47,7 @@ var
   
 implementation
 
-{$R *.DFM}
+{$R *.lfm}
 
 Var t : String;
 
@@ -189,7 +191,7 @@ If SaveDialog1.execute
    then
    begin
    assignfile (ts, SaveDialog1.FileName);
-   If not Fileexists (SaveDialog1.FileName)
+   If not FileExistsUTF8(SaveDialog1.FileName) { *Converted from FileExists*  }
    then
      Begin
      rewrite (ts);

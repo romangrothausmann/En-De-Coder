@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 122
+  Left = 354
   Height = 608
-  Top = 217
+  Top = 242
   Width = 806
   BorderStyle = bsSingle
   BorderWidth = 6
-  Caption = 'Ent/Verschlüssler'
+  Caption = 'Ent/VerschlÃ¼ssler'
   ClientHeight = 608
   ClientWidth = 806
   Color = clBtnFace
@@ -20,7 +20,6 @@ object Form1: TForm1
   Position = poDefault
   LCLVersion = '1.0.12.0'
   Visible = True
-  WindowState = wsMaximized
   object Bevel1: TBevel
     Left = 400
     Height = 524
@@ -38,42 +37,42 @@ object Form1: TForm1
     Shape = bsFrame
   end
   object Label1: TLabel
-    Left = 8
+    Left = 16
     Height = 14
     Top = 112
-    Width = 137
-    Caption = 'Text zum Verschlüsseln'
+    Width = 133
+    Caption = 'Text zum VerschlÃ¼sseln'
     ParentColor = False
   end
   object Label2: TLabel
-    Left = 396
+    Left = 400
     Height = 14
     Top = 112
-    Width = 137
+    Width = 133
     Anchors = [akTop, akRight]
-    Caption = 'Text zum Entschlüsseln'
+    Caption = 'Text zum EntschlÃ¼sseln'
     ParentColor = False
   end
   object Label3: TLabel
-    Left = 0
+    Left = 14
     Height = 14
-    Top = 46
-    Width = 120
+    Top = 8
+    Width = 123
     Anchors = [akLeft, akBottom]
-    Caption = 'Verschlüsslungszahl'
+    Caption = 'VerschlÃ¼sselungszahl'
     ParentColor = False
   end
   object Label4: TLabel
-    Left = 264
+    Left = 278
     Height = 14
-    Top = 46
+    Top = 8
     Width = 33
     Anchors = [akLeft, akBottom]
     Caption = 'Basis'
     ParentColor = False
   end
   object Button1: TButton
-    Left = 8
+    Left = 24
     Height = 25
     Top = 64
     Width = 89
@@ -82,23 +81,23 @@ object Form1: TForm1
     TabOrder = 4
   end
   object Edit1: TEdit
-    Left = 0
+    Left = 14
     Height = 21
-    Top = 63
+    Top = 24
     Width = 121
     Anchors = [akLeft, akBottom]
     TabOrder = 2
   end
   object Edit2: TEdit
-    Left = 264
+    Left = 278
     Height = 21
-    Top = 63
+    Top = 24
     Width = 121
     Anchors = [akLeft, akBottom]
     TabOrder = 3
   end
   object Memo1: TMemo
-    Left = 8
+    Left = 16
     Height = 444
     Top = 128
     Width = 369
@@ -106,7 +105,7 @@ object Form1: TForm1
     TabOrder = 1
   end
   object Memo2: TMemo
-    Left = 422
+    Left = 400
     Height = 444
     Top = 128
     Width = 369
@@ -116,7 +115,7 @@ object Form1: TForm1
   object Button2: TButton
     Left = 680
     Height = 25
-    Top = 131
+    Top = 96
     Width = 97
     Anchors = [akLeft, akBottom]
     Caption = '&Speichern'
@@ -124,7 +123,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Button3: TButton
-    Left = 280
+    Left = 288
     Height = 25
     Top = 64
     Width = 97
@@ -133,10 +132,10 @@ object Form1: TForm1
     TabOrder = 6
   end
   object ProgressBar1: TProgressBar
-    Left = 0
+    Left = 14
     Height = 17
-    Top = 552
-    Width = 785
+    Top = 584
+    Width = 770
     TabOrder = 8
   end
   object Button4: TButton
@@ -150,7 +149,7 @@ object Form1: TForm1
     TabOrder = 5
   end
   object Button5: TButton
-    Left = 280
+    Left = 288
     Height = 25
     Top = 96
     Width = 97
@@ -161,7 +160,7 @@ object Form1: TForm1
   object Button6: TButton
     Left = 680
     Height = 25
-    Top = 99
+    Top = 64
     Width = 97
     Anchors = [akLeft, akBottom]
     Caption = '&Öffnen'
@@ -170,12 +169,12 @@ object Form1: TForm1
   end
   object SaveDialog1: TSaveDialog
     Filter = 'Ent/Verschlüssler Dateien|*.evd|Text Dateien|*.txt|Alle Dateien|*.*'
-    left = 640
-    top = 72
+    left = 600
+    top = 64
   end
   object OpenDialog1: TOpenDialog
     Filter = 'Ent/Verschlüssler Dateien|*.evd|Text Dateien|*.txt|Alle Dateien|*.*'
-    left = 240
-    top = 72
+    left = 200
+    top = 64
   end
 end

@@ -7,7 +7,6 @@
       <Unit0>
         <Filename Value="EntVerschluessler1pr.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
@@ -19,12 +18,18 @@
       <Unit1>
         <Filename Value="EntVerschluessler1.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="EntVerschluessler1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="1" Y="1"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
     </Units>
@@ -33,5 +38,4 @@
     </General>
     <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectSession>
-  <SkipCheckLCLInterfaces Value="True"/>
 </CONFIG>

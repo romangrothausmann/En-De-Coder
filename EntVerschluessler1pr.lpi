@@ -46,7 +46,9 @@
       <Unit1>
         <Filename Value="EntVerschluessler1.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="EntVerschluessler1"/>
       </Unit1>
     </Units>

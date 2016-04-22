@@ -26,7 +26,6 @@ type
     Bevel1: TBevel;
     ProgressBar1: TProgressBar;
     Button4: TButton;
-    Animate1: TAnimate;
     Bevel2: TBevel;
     Button5: TButton;
     Button6: TButton;
@@ -58,14 +57,12 @@ VAR m, n, P,  e, i, z : Int64;
 
 begin
 Form1.Cursor:= crHourglass;
-Animate1.Play (1, Animate1.FrameCount, 0);
 Val(Edit1.Text, e, Code1);
 if code1 <> 0
    then
    Begin
    MessageDlg('Fehler an Position: '
    + IntToStr(Code1), mtWarning, [mbOk], 0);
-   Animate1.Stop;
    exit;
    End;
 Val(Edit2.Text, n, Code2);
@@ -74,7 +71,6 @@ if code2 <> 0
    Begin
    MessageDlg('Fehler an Position: '
    + IntToStr(Code2), mtWarning, [mbOk], 0);
-   Animate1.Stop;
    exit;
    End;
 z:= 1;
@@ -119,7 +115,6 @@ IF v[x]= ' '
 End;
 Memo2.Text:= v;
 ProgressBar1.Position:= 0;
-Animate1.Stop;
 Form1.Cursor:= crDefault;
 end;
 
@@ -131,14 +126,12 @@ VAR m, n, P,  d, i, z : Int64;
 
 begin
 Form1.Cursor:= crHourglass;
-Animate1.Play (1, Animate1.FrameCount, 0);
 Val(Edit1.Text, d, Code1);
 if code1 <> 0
    then
    Begin
    MessageDlg('Fehler an Position: '
    + IntToStr(Code1), mtWarning, [mbOk], 0);
-   Animate1.Stop;
    exit;
    End;
 Val(Edit2.Text, n, Code2);
@@ -147,7 +140,6 @@ if code2 <> 0
    Begin
    MessageDlg('Fehler an Position: '
    + IntToStr(Code2), mtWarning, [mbOk], 0);
-   Animate1.Stop;
    exit;
    End;
 ProgressBar1.Max:= Length(Memo2.Text);
@@ -178,7 +170,6 @@ ProgressBar1.Position:= z;
 Until Length (Memo2.Text) < z;
 Memo1.text:= w;
 ProgressBar1.Position:= 0;
-Animate1.Stop;
 Form1.Cursor:= crDefault;
 end;
 
